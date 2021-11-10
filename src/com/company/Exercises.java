@@ -5,8 +5,8 @@ public class Exercises {
     public static int addOdds(int n){
         int sum = 0;
         int count = 1;
-        while (count < n){
-            sum = count;
+        while (count <= n){
+            sum = sum + count;
             count = count + 2;
         }
         return sum;
@@ -35,15 +35,21 @@ public class Exercises {
     public static int printSum(int n){
         int sum = 0;
         int count = n;
-        while (count>0){
+        while (count >= 0){
             sum = sum + count;
             count -= 1;
         }
         return sum;
     }
 
+    public static boolean isPerfectSquare(int n){
+
+    }
+
+
+
     public static void main(String[] args) {
-        System.out.println(addOdds(19));
+        System.out.println(addOdds(4));
 
         System.out.println(" ");
 
