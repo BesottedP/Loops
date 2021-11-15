@@ -16,7 +16,7 @@ public class Exercises {
         int sum = 0;
         while (n>0){
             int last = n%10;
-            sum = sum + last;
+            sum += last;
             n = n/10;
         }
         return sum;
@@ -43,7 +43,13 @@ public class Exercises {
     }
 
     public static boolean isPerfectSquare(int n){
-
+        int count = 1;
+        int square = 0;
+        while (addOdds(count) <= n){
+            count = count + 2;
+            square++;
+        }
+        return square * square == n;
     }
 
 
@@ -66,6 +72,13 @@ public class Exercises {
 
         System.out.println(printSum(6));
         System.out.println(printSum(8));
+
+        System.out.println(" ");
+
+        System.out.println(isPerfectSquare(25));
+        System.out.println(isPerfectSquare(9));
+        System.out.println(isPerfectSquare(24));
+        System.out.println(isPerfectSquare(26));
     }
 }
 
