@@ -32,14 +32,18 @@ public class Exercises {
         return year;
     }
 
-    public static int printSum(int n){
+    public static void printSum(int n){
         int sum = 0;
-        int count = n;
-        while (count >= 0){
+        int count = 0;
+        while (n >= count){
             sum = sum + count;
-            count -= 1;
+            count += 1;
+            System.out.print(count);
+            if (n>= count){
+                System.out.print("+");
+            }
         }
-        return sum;
+        System.out.println("=" + sum);
     }
 
     public static boolean isPerfectSquare(int n){
@@ -55,7 +59,7 @@ public class Exercises {
 
 
     public static void main(String[] args) {
-        System.out.println(addOdds(4));
+        System.out.println(addOdds(7));
 
         System.out.println(" ");
 
@@ -70,15 +74,14 @@ public class Exercises {
 
         System.out.println(" ");
 
-        System.out.println(printSum(6));
-        System.out.println(printSum(8));
+        printSum(6);
+        printSum(8);
 
         System.out.println(" ");
 
         System.out.println(isPerfectSquare(25));
-        System.out.println(isPerfectSquare(9));
-        System.out.println(isPerfectSquare(24));
-        System.out.println(isPerfectSquare(26));
+        System.out.println(isPerfectSquare(788544));
+        System.out.println(isPerfectSquare(1234));
+        System.out.println(isPerfectSquare(3));
     }
 }
-
