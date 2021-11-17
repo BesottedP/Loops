@@ -23,18 +23,19 @@ public class Factorials {
         return e;
     }
 
-//    public static double calcEX(){
-//        double e = 2.0;
-//        double olde = 1;
-//        int c = 2;
-//        int pow = 1;
-//        while(e-olde > 0.001){
-//            olde = e;
-//            e += 1.0 / calcFactorial(c);
-//            c++;
-//        }
-//        return e;
-//    }
+    public static void calcEX(int x){
+        double e = 1.0;
+        double olde = 0;
+        int c = 1;
+        int pow = 1;
+        while(e-olde > 0.001){
+            olde = e;
+            e += Math.pow(x, pow) / calcFactorial(c);
+            pow++;
+            c++;
+        }
+        System.out.printf("e is %2.3f \n", e);
+    }
 
 
     public static void main(String[] args) {
@@ -44,5 +45,11 @@ public class Factorials {
         System.out.println(" ");
 
         System.out.println(calcE());
+
+        System.out.println(" ");
+
+        for (int count = 1; count <= 5; count++){
+            calcEX(count);
+        }
     }
 }
