@@ -34,11 +34,18 @@ public class Exercises {
 
     public static int printSum(int n){
         int sum = 0;
-        int count = n;
-        while (count >= 0){
+        int count = 0;
+        while (count <= n) {
             sum = sum + count;
-            count -= 1;
+            count += 1;
+            if (count <= n){
+                System.out.print(count);
+            }
+            if (count <= (n-1)){
+                System.out.print(" + ");
+            }
         }
+        System.out.print(" = ");
         return sum;
     }
 
@@ -56,6 +63,8 @@ public class Exercises {
 
     public static void main(String[] args) {
         System.out.println(addOdds(4));
+        System.out.println(addOdds(7));
+        System.out.println(addOdds(18));
 
         System.out.println(" ");
 
@@ -72,6 +81,7 @@ public class Exercises {
 
         System.out.println(printSum(6));
         System.out.println(printSum(8));
+        System.out.println(printSum(23));
 
         System.out.println(" ");
 
