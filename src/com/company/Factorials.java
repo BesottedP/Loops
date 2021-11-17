@@ -23,7 +23,7 @@ public class Factorials {
         return e;
     }
 
-    public static void calcEX(int x){
+    public static double calcEX(int x){
         double e = 1.0;
         double olde = 0;
         int c = 1;
@@ -34,7 +34,7 @@ public class Factorials {
             pow++;
             c++;
         }
-        System.out.printf("e is %2.3f \n", e);
+        return e;
     }
 
 
@@ -49,7 +49,8 @@ public class Factorials {
         System.out.println(" ");
 
         for (int count = 1; count <= 5; count++){
-            calcEX(count);
+            double e = calcEX(count);
+            System.out.printf("e^%d is %2.3f \n", count, e);
         }
     }
 }
