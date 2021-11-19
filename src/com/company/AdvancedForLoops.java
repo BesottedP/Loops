@@ -22,5 +22,6 @@ public class AdvancedForLoops {
 
     public static void main(String[] args) {
         eights();
+
     }
 }
