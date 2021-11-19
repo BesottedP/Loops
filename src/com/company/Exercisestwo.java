@@ -33,11 +33,32 @@ public class Exercisestwo {
     public static void sillyNumbers2(){
         for (int i = 0; i<4; i++){
             for (int n = 9; n>=0; n--){
-                    for(int x = n; x>=1; x--){
-                        System.out.print(n);
-                    }
+                for(int x = n; x>=1; x--){
+                    System.out.print(n);
                 }
+            }
             System.out.println();
+        }
+    }
+
+    public static void dollarsAndStars(){
+        for (int i = 7; i>0; i--){
+            System.out.println(" ");
+            for (int x =7; x>i; x--){
+                System.out.print("**");
+            }
+            for (int y=i; y>0; y--){
+                System.out.print("$");
+            }
+            for (int z=i; z>0; z--){
+                System.out.print("**");
+            }
+            for (int y=i; y>0; y--){
+                System.out.print("$");
+            }
+            for (int x =7; x>i; x--){
+                System.out.print("**");
+            }
         }
     }
 
@@ -61,5 +82,11 @@ public class Exercisestwo {
         System.out.println(" ");
 
         sillyNumbers2();
+
+        System.out.println(" ");
+
+        dollarsAndStars();
     }
 }
+
+
