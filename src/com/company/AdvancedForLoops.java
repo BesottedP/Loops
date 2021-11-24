@@ -57,6 +57,9 @@ public class AdvancedForLoops {
             for (int p=i; p>=end; p--){
                 System.out.print(p);
             }
+            for (int g = end+1 ; g<=i; g++){
+                System.out.print(g);
+            }
             System.out.println(" ");
         }
     }
