@@ -69,8 +69,8 @@ public class AdvancedForLoops {
         System.out.println(" ");
         alternate(6);
         System.out.println(" ");
-        isoceles(6);
+        isoceles(8);
         System.out.println(" ");
-        upSideDown(9, 5);
+        upSideDown(9, 3);
     }
 }
